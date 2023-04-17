@@ -1,38 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  font-size: 10px;
+}
+
 .App {
   text-align: center;
+  background-color: rgb(42, 65, 138);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ________________NAVBAR_______________________ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_section {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline a h1 {
+  padding: 30px 30px;
+  font-size: 3.6rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headline a h1 span {
+  color: rgb(250, 204, 3)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_section nav {
+  margin-right: 20px;
+}
+
+.nav_section nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.nav_section nav a:hover {
+
+  text-decoration: underline;
+  text-decoration-color: rgb(250, 204, 3);
+}
+
+/* ____________PRODUCTLIST________________________ */
+
+.grid_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  background-color: white;
+  padding: 20px;
+}
+
+.single_item_div {
+  width: 290px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.single_item_div:hover {
+  background-color: rgb(250, 204, 3);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+/* ____________PRODUCTITEM________________________ */
+
+.single_item_div a {
+  color: rgb(42, 65, 138);
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.single_item_div a:hover {
+  text-decoration: underline;
+}
+
+.single_item_div a img {
+  width: 70%;
+  height: 60%;
+  padding: 10px 0;
+}
+
+.single_item_div p {
+  font-size: 1.3rem;
+  color: rgb(42, 65, 138);
+  margin: 5px 0;
+}
+
+.single_item_div h3 {
+  font-size: 1.5rem;
+  color: rgb(42, 65, 138);
+}
+
+/* _____________PRODUCTDETAILS_____________________ */
+
+.product_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: white;
+  color: rgb(42, 65, 138);
+  padding: 60px;
+}
+
+.product_card div {
+  width: 85%;
+}
+
+.product_card div img {
+  width: 70%;
+}
+
+.product_card article {
+  text-align: left;
+  margin-bottom: 50vh;
+}
+
+.product_card article h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  border-bottom: 3px solid rgb(215, 215, 215);
+  line-height: 40px;
+}
+
+.product_card article p {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+.product_card article h4 {
+  font-size: 2.4rem;
+  margin: 5px 0;
+  border-bottom: 3px solid rgb(215, 215, 215);
+  line-height: 40px;
+}
+
+.product_card article h4 span {
+  font-size: 1.8rem;
+  color: rgb(42, 65, 138);
+
 }
