@@ -2,7 +2,7 @@
 
 build with react.js
 
-
+https://supermazonshop-0b66f5.netlify.app/
 
 Preview
 
